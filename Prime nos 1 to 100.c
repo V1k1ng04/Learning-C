@@ -5,9 +5,9 @@ void main()
     int count = 0;
     for (int i=2; i<100; i++)
     {
-        for (int j=2; j<=i; j++)   // Changed upper bound
+        for (int j=2; j<=i; j++)   
         {
-            if (i == j)  // Changed condition and reversed order of if:s
+            if (i == j)  
                 {printf("%d\n",i);
                 count += 1;}
             else if (i%j == 0)

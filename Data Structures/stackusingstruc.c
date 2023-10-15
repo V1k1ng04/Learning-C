@@ -1,3 +1,6 @@
+//Author: V1k1ng04
+//15/10/2023
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -11,7 +14,7 @@ struct stack{
 
 void init(struct stack* stk)
 {
-    stk->top = -1;
+    stk->top = -1;                             //initialize initial index as -1 so it becomes stk[0] when top is incremented. 
 }
 
 void push(struct stack* stk)
@@ -20,7 +23,7 @@ void push(struct stack* stk)
     printf("\nEnter element you want to push: ");
     scanf("%d", &ele);
 
-    if(stk->top == MAX-1)
+    if(stk->top == MAX-1)         // full condition
     {
         printf("Overflow");
         return;
@@ -32,7 +35,7 @@ void push(struct stack* stk)
 
 void pop(struct stack* stk)
 {
-    if(stk->top == -1)
+    if(stk->top == -1)                  //empty condition
     {
         printf("\nUnderflow");
         return;
@@ -49,7 +52,7 @@ void display(struct stack* stk)
         printf("\nStack empty");
         return;
     }
-    for(int i=stk->top; i>-1; i--)
+    for(int i=stk->top; i>-1; i--)          //start from top. we use i-- because we need to traverse backwards, thats how stack works.
     {
         printf("%d\t", stk->items[i]);
     }

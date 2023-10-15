@@ -1,3 +1,6 @@
+// 8/10/23
+// Author: V1k1ng04
+
 #include <stdio.h>
 #include <stdlib.h>
 

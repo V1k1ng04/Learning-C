@@ -1,4 +1,4 @@
-// 9/10/2023 Author: Satvik Rajesh.
+// 9/10/2023 Author: V1k1ng04
 
 #include<stdio.h>
 #include<stdlib.h>

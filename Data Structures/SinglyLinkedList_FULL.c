@@ -1,4 +1,4 @@
-// 9/10/2023 Author: V1k1ng04
+// 9/10/2023 Linked List 2 pointer approach by V1k1ng04
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -315,7 +315,7 @@ void main()
             break;
         
         case 7:
-            printf("\nEnter element you want to search");
+            printf("\nEnter element you want to search: ");
             scanf("%d", &ele);
             address = search(ele);
             printf("\nAddress of %d is %p", ele,address);
